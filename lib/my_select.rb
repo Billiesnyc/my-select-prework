@@ -6,7 +6,7 @@ def my_select(collection)
       new_collection.push(yield(collection[i]) == true)
       i += 1
     end
-
+    new_collection
   else
     puts "Hey! No block was given!"
   end
