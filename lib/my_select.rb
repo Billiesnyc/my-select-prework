@@ -2,9 +2,9 @@ def my_select(collection)
   if block_given?
     i = 0
  
-    while i < array.length
-      yield(array[i])
-      i = i + 1
+    while i < collection.length
+      yield(collection[i])
+      i += 1
     end
 
   else
